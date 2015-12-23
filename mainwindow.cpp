@@ -99,7 +99,6 @@ bool MainWindow::read_settings_file(QString filepath)
             title = lineContents.at(1);
 
         } else if (lineHeader == "#LISTS") {
-            title = lineContents.at(1);
             listNames.clear();
             for (int i = 1; i<5; i++) {
                 listNames << lineContents.at(i);
